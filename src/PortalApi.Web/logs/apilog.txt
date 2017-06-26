@@ -1,0 +1,572 @@
+PortalApi 2017-06-26 10:20:57.4109 
+ClientId: IP: ::1 
+Request: /ApiSso/api/Validic/36119464 Method: GET 
+ Request Ids: id:36119464   
+
+Exception Details: System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1//organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 31
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1//organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+ 
+ System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1//organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 31
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1//organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+
+PortalApi 2017-06-26 10:23:40.5998 
+ClientId: IP: ::1 
+Request: /ApiSso/api/Validic/36119464 Method: GET 
+ Request Ids: id:36119464   
+
+Exception Details: System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG/access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 35
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG/access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+ 
+ System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG/access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 35
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG/access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+
+PortalApi 2017-06-26 10:25:23.3750 
+ClientId: IP: ::1 
+Request: /ApiSso/api/Validic/36119464 Method: GET 
+ Request Ids: id:36119464   
+
+Exception Details: System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 32
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+ 
+ System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 32
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 404 (Not Found).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+
+PortalApi 2017-06-26 10:26:39.4387 
+ClientId: IP: ::1 
+Request: /ApiSso/api/Validic/36119464 Method: GET 
+ Request Ids: id:36119464   
+
+Exception Details: System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/apps.json?authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 401 (Unauthorized).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 32
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/apps.json?authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 401 (Unauthorized).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+ 
+ System.AggregateException: One or more errors occurred. ---> Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/apps.json?authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 401 (Unauthorized).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at PortalApi.Service.ValidicUserHandler.Handle(ValidicUserRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Handlers\ValidicUserHandler.cs:line 32
+   at PortalApi.Service.ValidationRequestDecorator`2.Handle(TRequest message) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\ValidationRequestDecorator.cs:line 31
+   at PortalApi.Service.AuditingRequestDecorator`2.Handle(TRequest request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Service\Decorators\AuditingRequestDecorator.cs:line 22
+   at PortalApi.Web.Controllers.BaseApiController.SendRequest[TResponse](IRequest`1 request) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\BaseApiController.cs:line 30
+   at PortalApi.Web.Controllers.ValidicController.Get(String id) in D:\workspaces\PortalApi\ApiSso\PortalApi.Web\Controllers\ValidicController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+---> (Inner Exception #0) Flurl.Http.FlurlHttpException: Request to https://api.validic.com/v1/organizations/5878de42ff9d93012e00010e/apps.json?authentication_token=boxBsZfNgHy-4MwaNryG&access_token=5878de42ff9d93012e00010e failed with status code 401 (Unauthorized).
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 38
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Flurl.Http.Configuration.FlurlMessageHandler.<SendAsync>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\Configuration\FlurlMessageHandler.cs:line 47
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.FlurlClient.<SendAsync>d__28.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\FlurlClient.cs:line 202
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__0`1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Flurl.Http.HttpResponseMessageExtensions.<ReceiveJson>d__1.MoveNext() in C:\projects\flurl\src\Flurl.Http.Shared\HttpResponseMessageExtensions.cs:line 47<---
+
